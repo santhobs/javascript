@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<body onclick="hvr()">
+
+	<input type="text" name=""><button>Submit</button>
+
+<div id="demo"></div>
+
+
+<script>
+function hvr(){
+var x = document.activeElement.tagName;
+
+document.getElementById("demo").innerHTML = x;
+}	
+</script>
+</body>
+</html>

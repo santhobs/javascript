@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<body>
+
+	<p id="p1">First Para</p>
+	<p id="p2">Second Para</p>
+	<p id="demo">test</p>
+
+	<button onclick="myFunction()">Try Now</button>
+
+
+<script>
+function myFunction(){
+	var nodelist = document.getElementsByTagName("p");
+	var i;
+	for (i = 0; i < nodelist.length; i++){
+		nodelist[i].style.background = "red";
+	}
+};
+	
+</script>
+</body>
+</html>

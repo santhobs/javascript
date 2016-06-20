@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<body>
+<div id="demo">
+	<p id="p1">First Para</p>
+	<p id="p2">Second Para</p>
+</div>
+
+<script>
+	var test = document.createElement("p");
+	var ntxt = document.createTextNode("santo");
+	test.appendChild(ntxt);
+	var element = document.getElementById("demo");
+	var child = document.getElementById("p2");
+	element.insertBefore(test, child);
+</script>
+</body>
+</html>

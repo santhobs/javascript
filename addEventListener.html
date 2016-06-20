@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<body>
+<button id="san">Click Here</button>
+<div id="demo">Sample Xontent</div>
+
+<script>
+	document.getElementById("san").addEventListener("click", chng);
+
+	function chng(){
+		document.getElementById("demo").innerHTML = "changed Text";
+	};
+</script>
+</body>
+</html>

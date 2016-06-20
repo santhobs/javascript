@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<body>
+<form id="frm1">
+	<input type="text" name="fname" value="First Name"><br>
+	<input type="text" name="lname" value="Last Name"><br>
+	<button type="submit">Submit</button>
+
+</form>
+<button onclick="myFunction()">Click Here</button>
+<div id="demo"></div>
+<p>zcxcxz</p>
+<p>Change Text</p>
+
+<script>
+
+	function myFunction(){
+		var x = document.forms["frm1"];
+		var text = "";
+		var i;
+		for (i = 0; i < x.length; i++){
+			text += x.elements[i].value + "<br>";
+		}
+		document.getElementById("demo").innerHTML = text;
+	};
+
+	var mc = document.getElementsByTagName("title");
+	document.getElementsByTagName("p")[0].innerHTML = 
+	mc[0].innerHTML;
+
+	document.getElementsByTagName("p")[1].innerHTML = "Successfully changed the tag name";
+
+</script>
+</body>
+</html>

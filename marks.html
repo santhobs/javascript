@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the referrer of this document.</p>
+<div id="stul"></div>
+
+<div id="sample"></div>
+
+<script>
+
+
+  
+
+  	var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]]; 
+	var txt = "";
+  	var stubrk = students; 
+  
+var Avgmarks = 0;  
+  
+for (var i=0; i < students.length; i++) { 
+	txt = txt + students[i] + "<br>"; 
+        Avgmarks += students[i][1];  
+        var avg = (Avgmarks/students.length);  
+}  
+  var newArray = [];
+
+ 
+        if (avg < 60){  
+          newArray.push("Grade : F");        
+          }   
+        else if (avg < 70) {  
+                newArray.push("Grade : D");   
+                  }   
+        else if (avg < 80)   
+             {  
+                newArray.push("Grade : C");   
+        } else if (avg < 90) {  
+                newArray.push("Grade : B");   
+        } else if (avg < 100) {  
+                newArray.push("Grade : A");   
+} 
+
+
+document.getElementById("stul").innerHTML = txt ;
+
+</script>
+
+</body>
+</html>

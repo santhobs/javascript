@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<body>
+
+<form name="san">
+	<input type="checkbox" name="cb">
+	<button type="submit" onclick="validate()">Try Now</button>
+</form>
+<script>
+function validate(){
+	if(document.san.cb.checked)
+		alert("Checked");
+	else
+		alert("Not Checked")
+};
+	
+</script>
+</body>
+</html>

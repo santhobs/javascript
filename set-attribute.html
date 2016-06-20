@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<style type="text/css">
+	.txtclr{
+		color: red;
+	}
+</style>
+<body>
+
+<h1>Hello World!</h1>
+	<button onclick="changeclr()">Open Window</button>
+	
+
+
+<div id="demo"></div>
+
+
+<script>
+
+function changeclr(){
+	var h1 = document.getElementsByTagName("H1")[0];
+	var att = document.createAttribute("class");
+	att.value = "txtclr";
+	h1.setAttributeNode(att);
+}
+</script>
+</body>
+</html>

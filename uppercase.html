@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the referrer of this document.</p>
+
+
+<button onclick="upper()">Test</button>
+<p id="demo">the quick brown fox</p>
+<div id="sample"></div>
+
+<script>
+
+
+
+function uppercase()
+{
+ var str = document.getElementById("demo").innerHTML;
+  var array1 = str.split(' ');
+  var newarray1 = [];
+    
+  for(var x = 0; x < array1.length; x++){
+      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+  }
+  return newarray1.join(' ');
+  
+}
+function upper(){
+document.getElementById("sample").innerHTML = uppercase("");
+}
+</script>
+
+</body>
+</html>

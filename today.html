@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+</head>
+<body>
+
+	<button onclick="showDate()">Show Date</button>
+
+
+<div id="demo"></div>
+
+
+<script>
+function showDate(){
+var today = new Date();
+
+var dd = today.getDate();
+var mm = today.getMonth();
+var yy = today.getFullYear();
+var dy = today.getDay();
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+today = dd + "-" + mm + "-" + yy + "-" + daylist[dy];
+
+
+document.getElementById("demo").innerHTML = today;
+}
+
+function printPage(){
+
+window.print();
+}		
+</script>
+</body>
+</html>

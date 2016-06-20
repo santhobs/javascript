@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the referrer of this document.</p>
+
+
+<button onclick="upper()">Test</button>
+<p id="demo">Web Development Tutorial referrerdocument</p>
+<div id="sample"></div>
+
+<script>
+function find_longest_word()  
+{  
+	var array2 = document.getElementById("demo").innerHTML;
+  var array1 = array2.match(/\w[a-z]{0,}/gi);  
+  var result = array1[0];  
+  
+  for(var x = 0 ; x < array1.length ; x++)  
+  {  
+    if(result.length < array1[x].length)  
+    {  
+    result = array1[x];  
+    }   
+  }  
+  return result;  
+}  
+
+
+	document.getElementById("sample").innerHTML = find_longest_word();
+
+
+</script>
+
+</body>
+</html>

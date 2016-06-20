@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the referrer of this document.</p>
+
+
+<button onclick="upper()">Test</button>
+<p id="demo">Web Development Tutorial referrerdocument</p>
+<div id="sample"></div>
+
+<script>
+function vowel_count(str1)  
+{  
+	var str1 = document.getElementById("demo").innerHTML;
+  var vowel_list = 'aeiouAEIOU';  
+  var vcount = 0;  
+    
+  for(var x = 0; x < str1.length ; x++)  
+  {  
+    if (vowel_list.indexOf(str1[x]) !== -1)  
+    {  
+      vcount += 1;  
+    }  
+    
+  }  
+  return vcount;  
+}  
+
+	document.getElementById("sample").innerHTML = vowel_count();
+
+
+</script>
+
+</body>
+</html>

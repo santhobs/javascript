@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the referrer of this document.</p>
+
+
+<button onclick="upper()">Test</button>
+<p id="demo">Web Development Tutorial referrerdocument</p>
+<div id="sample"></div>
+
+<script>
+function addStudent(id, refreshCallback)  
+{  
+
+    refreshCallback(); 
+
+}  
+  
+function refreshStudentList() {  
+    console.log('Hello');  
+}  
+  addStudent(1, refreshStudentList)
+console.log(addStudent);  
+
+</script>
+
+</body>
+</html>

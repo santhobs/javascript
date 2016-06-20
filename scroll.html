@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Javascrript</title>
+	<style type="text/css">
+		#header{
+			height: 150px;
+			background: #990000;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			transition: all 0.4s;
+		}
+		div{
+			height: 2000px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="header"></div>
+
+	<div id="demo"></div>
+
+
+<script>
+function scrol(){
+	var top = document.getElementById("header");
+	var ypos = window.pageYOffset;
+	if(ypos > 500){
+		top.style.height = "70px";
+	} else{
+		top.style.height = "150px";
+	}
+	
+}
+window.addEventListener("scroll", scrol);
+	
+</script>
+</body>
+</html>

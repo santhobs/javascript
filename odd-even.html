@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the referrer of this document.</p>
+
+
+<div id="sample"></div>
+
+<script>
+
+function text(){
+
+var array1 = [];
+for (var x=0; x<=15; x++) {  
+        if (x === 0) {  
+           array1.push(x +  " is even" + "<br>");  
+        }  
+        else if (x % 2 === 0) {  
+            array1.push(x + " is even" + "<br>");     
+        }  
+        else {  
+            array1.push(x + " is odd" + "<br>");  
+        } 
+
+} return array1.join(' ');
+
+}
+
+document.getElementById("sample").innerHTML = text(); 
+
+</script>
+
+</body>
+</html>
